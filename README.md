@@ -1,8 +1,8 @@
 # FolderStatsTool - Công cụ thống kê thư mục
 
-<u>Version:</u> 1.0.0  
+<u>Version:</u> 1.0.1  
 <u>Author:</u> ThanhRòm  
-<u>Release Date:</u> 2025-12-16
+<u>Release Date:</u> 2025-12-18
 
 ## 📋**GIỚI THIỆU**
 
@@ -68,14 +68,51 @@ FolderStatsTool/
 | Phần | Mô tả |
 |------|-------|
 | Phần 0 | Import thư viện & Bootstrap |
+| Phần 0.2 | Cấu hình thông báo khởi động |
 | Phần 1 | Utils (format_size, format_duration) |
 | Phần 2 | GUI Class (FolderStatsTool) |
 | Phần 3 | Core Logic (quét thư mục) |
 | Phần 4 | Inline Editing |
 | Phần 5 | Export/Import Excel |
-| Phần 6 | Copy utilities |
+| Phần 6 | Copy utilities & Filter |
+| Phần 7 | File Operations (Xóa, Tạo mới, Di chuyển) |
+| Phần 8 | Khởi chạy ứng dụng |
 
 ## **LỊCH SỬ PHÁT TRIỂN**
+
+### **Version 1.0.1** - Update by ThanhRòm (2025-12-18)
+
+<details>
+  <summary>MOVE, DELETE & CREATE</summary>
+
+1. Di chuyển hàng loạt file/folder:
+   - Hỗ trợ browse và nhập đường dẫn trực tiếp
+   - Tự động tạo thư mục mới nếu chưa tồn tại
+2. Xóa hàng loạt với xác nhận
+3. Tạo mới file/folder ngay trong ứng dụng
+</details>
+
+---
+<details>
+  <summary>MULTI-COLUMN FILTER</summary>
+
+1. Lọc song song nhiều cột đồng thời
+2. Header hiển thị biểu tượng 🔍 khi có filter
+3. Lọc theo tên, loại, dung lượng, số file
+4. Hỗ trợ lọc = 0 (file rỗng, folder trống)
+</details>
+
+---
+<details>
+  <summary>UI IMPROVEMENTS</summary>
+
+1. Cửa sổ tự động resize theo màn hình
+2. Cột Tên và Di chuyển đến co dãn thông minh
+3. TreeView mặc định mở rộng
+4. Popup căn giữa ứng dụng
+</details>
+
+---
 
 ### **Version 1.0.0** - Initial Release by ThanhRòm (2025-12-16)
 
