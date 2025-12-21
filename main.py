@@ -241,12 +241,12 @@ class FolderStatsTool(tk.Tk):
         # Lấy kích thước màn hình và đặt cửa sổ chiếm hết chiều cao
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
-        window_width = min(1000, screen_width - 200)  # Tối đa 1600px rộng
+        window_width = min(1200, screen_width - 200)  # Tối đa 1600px rộng
         window_height = screen_height - 80  # Trừ taskbar
         x_pos = (screen_width - window_width) // 2
         y_pos = 10
         self.geometry(f"{window_width}x{window_height}+{x_pos}+{y_pos}")
-        self.minsize(900, 700)          # Kích thước tối thiểu
+        self.minsize(1100, 700)          # Kích thước tối thiểu
         
         # --- Biến trạng thái giao diện ---
         self.path_var = tk.StringVar()              # Đường dẫn thư mục quét
